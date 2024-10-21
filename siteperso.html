@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Site Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Header / Navbar -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="burger">
+        <div class="container-fluid">
+          <!-- Bouton burger pour le menu en mobile/tablette -->
+          <button
+            class="navbar-toggler mx-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Contenu du menu -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarContent"
+          >
+            <ul class="navbar-nav align-items-center">
+              <!-- Premier bouton en texte -->
+              <li class="nav-item">
+                <a
+                  href="#accueil"
+                  class="d-block link-underline link-underline-opacity-0"
+                >
+                  <button
+                    class="btn-text mx-5"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                  >
+                    Accueil
+                  </button>
+                </a>
+              </li>
+
+              <!-- Deuxième bouton en texte -->
+              <li class="nav-item">
+                <a
+                  href="#competences"
+                  class="d-block link-underline link-underline-opacity-0"
+                >
+                  <button
+                    class="btn-text mx-5"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                  >
+                    Compétences
+                  </button>
+                </a>
+              </li>
+
+              <!-- Icône (image) au centre -->
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link mx-3"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarContent"
+                >
+                  <img src="/img/navbar-logo.svg" alt="Icône" />
+                </a>
+              </li>
+
+              <!-- Troisième bouton en texte -->
+              <li class="nav-item">
+                <a
+                  href="#projets"
+                  class="d-block link-underline link-underline-opacity-0"
+                >
+                  <button
+                    class="btn-text mx-5"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                  >
+                    Projets
+                  </button>
+                </a>
+              </li>
+
+              <!-- Quatrième bouton en texte -->
+              <li class="nav-item">
+                <a
+                  href="#contact"
+                  class="d-block link-underline link-underline-opacity-0"
+                >
+                  <button
+                    class="btn-text mx-5"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                  >
+                    Contact
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Accueil -->
+
+    <main>
+      <!-- Section d'accueil avec un identifiant 'accueil' -->
+      <section class="m-bottom-5" id="accueil">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <h1 class="fw-bold">Je suis Julien Boudigues Développeur Web</h1>
+
+              <h2 class="fw-light fs-1">Bienvenue à vous</h2>
+
+              <!-- Paragraphe -->
+              <p class="fw-light p-3 fs-5 shadow-lg p-2">
+                <strong>Jeune et enthousiaste</strong>, avide de nouveaux défis
+                dont je m’affranchis de par mon adaptabilité et mon insatiable
+                soif de connaissance. Je m’engage à fournir des résultats de
+                <strong>premier ordre.</strong>
+              </p>
+
+              <!-- Lien menant à la section -->
+              <a
+                href="#projets"
+                class="d-block link-underline link-underline-opacity-0"
+              >
+                <button
+                  class="fw-semibold mx-auto my-4 px-4 py-2 rounded d-block"
+                >
+                  Mes projets
+                </button>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 align-self-center">
+
+              <!-- Ancre compétence -->
+            <div id="competences"></div>   
+
+              <!-- Image -->
+              <img
+                src="img/photo-me.svg"
+                alt="Photo de Julien BOUDIGUES"
+                class="w-100"/> 
+                
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Developpement -->
+
+      <section class="py-5 tech-banner" >
+        <div class="container">
+          <h2 class="fs-1">Mon expertise</h2>
+          <h3 class="fw-light">Développement web et design</h3>
+
+          <div class="container py-4">
+            <div class="row text-center">
+
+              <!-- Première icône : HTML -->
+              <div class="col-6 col-md-2">
+                <i class="fab fa-html5 icon"></i>
+                <p class="tech-name">HTML</p>
+              </div>
+
+              <!-- Deuxième icône : CSS -->
+              <div class="col-6 col-md-2">
+                <i class="fab fa-css3-alt icon"></i>
+                <p class="tech-name">CSS</p>
+              </div>
+
+              <!-- Troisième icône : JavaScript -->
+              <div class="col-6 col-md-2">
+                <i class="fab fa-js icon"></i>
+                <p class="tech-name">JavaScript</p>
+              </div>
+
+              <!-- Quatrième icône : Bootstrap -->
+              <div class="col-6 col-md-2">
+                <i class="fab fa-bootstrap icon"></i>
+                <p class="tech-name">Bootstrap</p>
+              </div>
+
+              <!-- Cinquième icône : Git -->
+              <div class="col-6 col-md-2">
+                <i class="fab fa-git-alt icon"></i>
+                <p class="tech-name">Git</p>
+              </div>
+
+              <!-- Sixième icône : Figma -->
+              <div class="col-6 col-md-2">
+                <i class="fab fa-figma icon"></i>
+                <p class="tech-name">Figma</p>
+              </div>
+
+              <!-- Ancre Projets -->
+              <div id="projets"></div>
+            </div>
+          </div>
+
+      <!-- Projet -->
+
+      <section class="py-5">
+        <div class="container">
+          <h2 class="fs-1">Mon portfolio</h2>
+
+          <h3 class="fw-light">Projets perso et pro</h3>
+
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide w-50 mx-auto"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Première carte du carousel (élément actif) avec un intervalle de 10 secondes -->
+              <div
+                class="carousel-item active card container border border-bottom-0 lorem-card px-0"
+                data-bs-interval="10000"
+              >
+                <img
+                  src="/img/carte1.svg"
+                  class="d-block w-100 rounded-top-4"
+                  alt="..."
+                />
+                <p class="p-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non risus. Suspendisse lectus tortor, dignissim sit amet,
+                  adipiscing nec.
+                </p>
+              </div>
+
+              <!-- Deuxième carte du carousel avec un intervalle de 2 secondes -->
+              <div
+                class="carousel-item card container border border-bottom-0 lorem-card px-0"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="/Portfolio/img/carte1.svg"
+                  class="d-block w-100 rounded-top-4"
+                  alt="..."
+                />
+                <p class="p-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non risus. Suspendisse lectus tortor, dignissim sit amet,
+                  adipiscing nec.
+                </p>
+              </div>
+
+              <!-- Troisième carte du carousel sans intervalle spécifique -->
+              <div
+                class="carousel-item card container border border-bottom-0 lorem-card px-0"
+              >
+                <img
+                  src="/Portfolio/img/carte1.svg"
+                  class="d-block w-100 rounded-top-4"
+                  alt="..."
+                />
+                <p class="p-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non risus. Suspendisse lectus tortor, dignissim sit amet,
+                  adipiscing nec.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bouton de contrôle pour passer à la carte précédente -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!-- Bouton de contrôle pour passer à la carte suivante -->
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+            <!-- Ancre Contact -->
+            <div id="contact"></div>
+          </div>
+        </div>
+      </section >
+
+      <!-- Formulaire -->
+
+      <section class="py-5" >
+        <div class="container">
+          <h2>Un projet de création web ?</h2>
+
+          <div class="row gy-4 my-5 justify-content-center">
+            <div class="col-6 col-md-2">
+              <!-- Lien vers LinkedIn avec une icône -->
+              <a
+                class="text-white link-underline link-underline-opacity-0 fs-3"
+                href="https://www.linkedin.com/in/julien-boudigues-61563432b/"
+              >
+                LinkedIn <i class="bi bi-linkedin"></i>
+              </a>
+
+              <!-- Lien vers GitHub avec une icône -->
+              <a
+                class="text-white link-underline link-underline-opacity-0 fs-3"
+                href="#"
+              >
+                GitHub <i class="bi bi-github p-1"></i>
+              </a>
+            </div>
+
+            <div class="col-12 offset-md-1 col-md-6">
+              <!-- Formulaire de contact -->
+              <form class="p-4 border">
+                <!-- Champ pour le nom -->
+                <div class="mb-3">
+                  <label class="form-label" for="name">Nom</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+
+                <!-- Champ pour l'adresse email -->
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+
+                <!-- Champ pour le message -->
+                <div class="mb-3">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <!-- Bouton pour soumettre le formulaire -->
+                <button
+                  class="fw-semibold mx-auto my-4 px-4 py-2 rounded d-block"
+                  type="submit"
+                >
+                  Envoyer un message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  Footer  -->
+
+<footer class="text-white py-4">
+  <div class="container text-center">
+    
+    <!-- Liens vers LinkedIn et GitHub -->
+    <div class="mb-3">
+      <a href="https://www.linkedin.com/in/julien-boudigues-61563432b/" target="_blank" class="text-white mx-3">
+        <i class="fab fa-linkedin fa-2x"></i> 
+      </a>
+      <a href="https://github.com/" target="_blank" class="text-white mx-3">
+        <i class="fab fa-github fa-2x"></i> 
+      </a>
+    </div>
+    
+    <!-- Texte du footer -->
+    <p class="mb-0">© 2024 Julien Boudigues. Tous droits réservés.</p>
+  </div>
+</footer>
+
+    <!-- Javascript -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
